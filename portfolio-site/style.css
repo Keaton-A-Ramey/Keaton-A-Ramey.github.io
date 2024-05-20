@@ -1,71 +1,36 @@
-.timeline {
-    position: relative;
-    padding: 20px 0;
-    list-style: none;
-  }
+/* style.css */
 
-  .timeline::after {
-    content: '';
-    position: absolute;
-    width: 2px;
-    background-color: #ddd;
-    top: 0;
-    bottom: 0;
-    left: 50%;
-    margin-left: -1px;
-  }
+/* General body styling */
+body {
+    background-color: #ffffff; /* White background for the body */
+    color: #333; /* Darker text for readability */
+    font-family: Arial, sans-serif;
+}
 
-  .timeline-item {
-    margin: 0 0 20px 0;
-    padding: 20px 40px;
-    position: relative;
-    opacity: 0;
-    transform: translateY(100px);
-    transition: all 0.5s ease-out;
-  }
-
-  .timeline-item::before {
-    content: ' ';
-    background: white;
-    border: 3px solid #007bff;
-    border-radius: 50%;
-    position: absolute;
-    left: 50%;
-    top: 20px;
-    width: 20px;
-    height: 20px;
-    margin-left: -10px;
-    z-index: 1;
-  }
-
-  .timeline-item.in-view {
-    opacity: 1;
-    transform: translateY(0);
-  }
-
-  .timeline-item-content {
-    padding: 20px;
-    background-color: #f8f9fa;
-    position: relative;
-    border-radius: 6px;
-    width: 45%;
-  }
-
-  .timeline-item:nth-child(even) .timeline-item-content {
-    left: 0;
-  }
-
-  .timeline-item:nth-child(odd) .timeline-item-content {
-    left: 50%;
-  }
-
-  .timeline-item-content h3 {
-    margin-top: 0;
-  }
-
-  .timeline-item-content img {
+/* Image styling */
+img {
+    border: 5px solid #fff; /* White border around images */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
     max-width: 100%;
     height: auto;
-    border-radius: 6px;
-    margin-bottom: 10px;
-  }
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Paragraph styling */
+.hello p {
+    margin-top: 60px;
+    padding-left: 5%;
+    padding-right: 5%;
+    font-size: large;
+    text-align: center;
+}
+
+/* Section styling for NYC and Miami University */
+.section-gray {
+    background-color: #f8f9fa; /* Light gray background */
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
