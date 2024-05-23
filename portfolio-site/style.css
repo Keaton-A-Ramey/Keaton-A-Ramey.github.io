@@ -111,3 +111,8 @@ img {
 .contact-form button {
     width: 100%;
 }
+
+.main-cards {
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+}
