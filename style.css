@@ -116,3 +116,153 @@ img {
     padding-left: 12.5%;
     padding-right: 12.5%;
 }
+
+/* Blog post pages */
+
+/* General Container Styling */
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    background-color: #f8f9fa;
+}
+
+/* Header Container */
+.header-container {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.header-container h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2c3e50;
+    margin-bottom: 0.5rem;
+}
+
+.header-container .post-introduction {
+    margin-bottom: 1.5rem;
+    font-size: 1.1rem;
+    color: #34495e;
+}
+
+/* Content Container */
+.content-container {
+    background-color: #ffffff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+}
+
+.citation-container {
+    text-indent: -1.5rem;
+    background-color: #ffffff;
+    padding: 2rem;
+    padding-left: 3rem;
+    margin-top: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+}
+
+.content-container p {
+    text-indent: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+/* Additional Content Styling */
+.content-container ul,
+.content-container ol {
+    margin-left: 2rem;
+    margin-bottom: 1.5rem;
+}
+
+.content-container ul li,
+.content-container ol li {
+    margin-bottom: 0.5rem;
+}
+
+/* Pull Quote Styling */
+.pull-quote {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-weight: bold;
+    color: #2c3e50;
+    background-color: #ecf0f1;
+    border-left: 5px solid #2c3e50;
+    padding: 1rem;
+    margin: 1.5rem 0;
+}
+
+/* Image Styling */
+.image-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 0.5rem;
+}
+
+.image-container figcaption {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-top: 0.5rem;
+}
+
+/* Table Styling */
+.table-container {
+    overflow-x: auto;
+    margin: 2rem 0;
+}
+
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+.table-container th,
+.table-container td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    color: #333;
+}
+
+.table-container td {
+    background-color: #fff;
+    color: #333;
+}
+
+/* Work Cited Section */
+.work-cited {
+    margin-top: 2rem;
+    font-style: italic;
+}
+
+.work-cited a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.work-cited a:hover {
+    text-decoration: underline;
+}
