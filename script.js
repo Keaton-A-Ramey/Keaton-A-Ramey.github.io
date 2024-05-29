@@ -9,3 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
         delay += 200 // Increase delay for each card
     })
 })
+
+function changePDF(pdf) {
+    document.getElementById('pdfViewer').src = '../pdfs/' + pdf;
+}

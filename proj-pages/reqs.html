@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>CS Work</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
+        <link href="../style.css" rel="stylesheet" />
+        <!--Favicon Package Code-->
+        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
+        <link rel="manifest" href="icons/site.webmanifest" />
+        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5" />
+        <meta name="msapplication-TileColor" content="#da532c" />
+        <meta name="theme-color" content="#ffffff" />
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../index.html">Keaton Ramey</a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Hello World!<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a
+                            class="nav-link dropdown-toggle active"
+                            href="#"
+                            id="work-dropdown"
+                            role="button"
+                            data-toggle="dropdown"
+                            aria-haspopup="true"
+                            aria-expanded="false"
+                        >
+                            My Work
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="work-dropdown">
+                            <a class="dropdown-item active" href="../csci.html">CS Projects</a>
+                            <a class="dropdown-item" href="../crtv.html">Creative Projects</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../world.html">My World</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contact.html">Contact Me</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../playground.html">Playground</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+       <!-- Main Content -->
+       <div class="container">
+        <div class="text-center mb-5" style="margin-top: 3%;">
+            <h1>Software Requirements Specification Page</h1>
+            <p class="lead">You can see my work by clicking the buttons below:</p>
+        </div>
+
+        <div class="text-center mb-4">
+            <button class="btn btn-primary" onclick="changePDF('srs.pdf')">IEEE830 SRS Document</button>
+            <button class="btn btn-primary" onclick="changePDF('req-review1.pdf')">Requirements Review #1</button>
+            <button class="btn btn-primary" onclick="changePDF('req-review2.pdf')">Requirements Review #2</button>
+        </div>
+        <br>
+        <div class="embed-responsive embed-responsive-16by9">
+            <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/srs.pdf"></iframe>
+        </div>
+    </div>
+
+    <br><br>
+       
+        <footer class="footer mt-auto py-3 bg-light">
+            <div class="container text-center">
+                <span class="text-muted">© 2024 Keaton Ramey. All rights reserved. </span> <br />
+                <span class="text-muted"
+                    >Email: keaton.ramey@gmail.com | Phone: (646)-316-1340 | <a href="https://www.linkedin.com/in/keaton-ramey">LinkedIn</a> |
+                    <a href="https://github.com/Keaton-A-Ramey">GitHub</a></span
+                >
+            </div>
+        </footer>
+
+        <!--JQuery/Bootstrap/My Script-->
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+        <script src="../script.js"></script>
+    </body>
+</html>
