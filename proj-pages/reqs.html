@@ -64,26 +64,26 @@
             </div>
         </nav>
 
-       <!-- Main Content -->
-       <div class="container">
-        <div class="text-center mb-5" style="margin-top: 3%;">
-            <h1>Software Requirements Specification Page</h1>
-            <p class="lead">You can see my work by clicking the buttons below:</p>
+        <!-- Main Content -->
+        <div class="container">
+            <div class="text-center mb-5" style="margin-top: 3%">
+                <h1>Software Requirements Specification Page</h1>
+                <p class="lead">You can see my work by clicking the buttons below:</p>
+            </div>
+
+            <div class="text-center mb-4">
+                <button class="btn btn-primary" onclick="changePDF('srs.pdf')">IEEE830 SRS Document</button>
+                <button class="btn btn-primary" onclick="changePDF('req-review1.pdf')">Requirements Review #1</button>
+                <button class="btn btn-primary" onclick="changePDF('req-review2.pdf')">Requirements Review #2</button>
+            </div>
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/srs.pdf"></iframe>
+            </div>
         </div>
 
-        <div class="text-center mb-4">
-            <button class="btn btn-primary" onclick="changePDF('srs.pdf')">IEEE830 SRS Document</button>
-            <button class="btn btn-primary" onclick="changePDF('req-review1.pdf')">Requirements Review #1</button>
-            <button class="btn btn-primary" onclick="changePDF('req-review2.pdf')">Requirements Review #2</button>
-        </div>
-        <br>
-        <div class="embed-responsive embed-responsive-16by9">
-            <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/srs.pdf"></iframe>
-        </div>
-    </div>
+        <br /><br />
 
-    <br><br>
-       
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container text-center">
                 <span class="text-muted">© 2024 Keaton Ramey. All rights reserved. </span> <br />

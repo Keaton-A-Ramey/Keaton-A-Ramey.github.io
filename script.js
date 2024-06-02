@@ -11,5 +11,11 @@ document.addEventListener('DOMContentLoaded', function () {
 })
 
 function changePDF(pdf) {
-    document.getElementById('pdfViewer').src = '../pdfs/' + pdf;
+    document.getElementById('pdfViewer').src = '../pdfs/' + pdf
 }
+
+document.getElementById('run-button').addEventListener('click', function() {
+    // Example: output to the terminal
+    const output = 'Hello, World!';
+    document.getElementById('terminal-output').innerText = output;
+});

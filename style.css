@@ -285,3 +285,44 @@ img {
 .text-center .btn {
     margin: 0 5px;
 }
+
+/* Java Projects Page */
+
+/* Container styling */
+.java-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Code box styling */
+#code-box {
+    background-color: #f8f9fa;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    overflow-x: auto;
+}
+
+/* Terminal box styling */
+#terminal-box {
+    background-color: #000;
+    color: #00ff00;
+    border: 1px solid #ced4da;
+    padding: 10px;
+    font-family: monospace;
+    height: 200px;
+    overflow-y: auto;
+}
+
+#terminal-output {
+    color: white;
+}
+
+/* Button styling */
+#run-button {
+    display: block;
+    margin: 20px 0;
+}
+
