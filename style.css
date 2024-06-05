@@ -117,18 +117,33 @@ img {
     padding-right: 12.5%;
 }
 
-/* Blog post pages */
+/*
+Home Page
+*/
 
-/* General Container Styling */
-.hello {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: 'Arial', sans-serif;
-    font-size: 1.1rem;
-    line-height: 1.8;
-    background-color: #f8f9fa;
+.welcome-page {
+    background-color: #D1EBFF;
+    color: #000c19;
 }
+
+.hello {
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+}
+
+.hello-btn {
+    background-color: #4A90E2;
+    border-color: #4A90E2;
+    color: white;
+}
+.hello-btn:hover {
+    background-color: #357ABD;
+    border-color: #357ABD;
+    color: white;
+}
+
+
+/* Blog post pages */
 
 /* Header Container */
 .header-container {
@@ -325,4 +340,3 @@ img {
     display: block;
     margin: 20px 0;
 }
-
