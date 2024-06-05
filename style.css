@@ -122,7 +122,7 @@ Home Page
 */
 
 .welcome-page {
-    background-color: #D1EBFF;
+    background-color: #d1ebff;
     color: #000c19;
 }
 
@@ -132,16 +132,15 @@ Home Page
 }
 
 .hello-btn {
-    background-color: #4A90E2;
-    border-color: #4A90E2;
+    background-color: #4a90e2;
+    border-color: #4a90e2;
     color: white;
 }
 .hello-btn:hover {
-    background-color: #357ABD;
-    border-color: #357ABD;
+    background-color: #357abd;
+    border-color: #357abd;
     color: white;
 }
-
 
 /* Blog post pages */
 
