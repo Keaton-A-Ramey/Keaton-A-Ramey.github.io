@@ -31,6 +31,9 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../about.html">About Me</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a
                             class="nav-link dropdown-toggle active"
@@ -44,8 +47,9 @@
                             My Work
                         </a>
                         <div class="dropdown-menu" aria-labelledby="work-dropdown">
-                            <a class="dropdown-item active" href="../csci.html">CS Projects</a>
+                            <a class="dropdown-item" href="../csci.html">CS Projects</a>
                             <a class="dropdown-item" href="../crtv.html">Creative Projects</a>
+                            <a class="dropdown-item active" href="#">CV</a>
                         </div>
                     </li>
                     <li class="nav-item">
@@ -62,53 +66,28 @@
         </nav>
 
         <!-- Main Content -->
-        <div class="container-fluid row">
-            <div class="text-center mb-5 col-md-4 lead" style="margin-top: 3%; margin-left: 8%">
-                <h1>About Me</h1>
-                <br />
-
-                <p>
-                    I am a dedicated student who finds succeeding in the most difficult classes deeply rewarding. You can see all of my coursework
-                    through my transcript on the CV page (under "My Work"). My favorite classes that I have taken in my time here are Intro to
-                    Artificial Intelligence, Web Application Development, Statistics, and Foundations in Computer Graphics.
-                </p>
-                <p>
-                    I am also deeply involved in the community here. One thing that I have done in the past year that I am really proud of is
-                    resurrecting our Association for Computing Machinery Chapter. When I became president, we had zero funding and just 3 people
-                    coming to the meetings: the officers. By the end of the year, I (with help from our officers) was able to get a strong community
-                    of about 10 members coming per meeting, develop relationships with potential employers, and secure up to $6000 in funding for next
-                    year. Next year, I am also going to be the vice president of our Tau Beta Pi chapter here on campus. I look forward to working
-                    hard and making that club great too. Side note: if you are a prospective employer who would be interested in starting a
-                    relationship with one of these organizations, please let me know through the
-                    <a href="contact.html">contact page!</a>
-                </p>
-                <p>
-                    I am a rising senior at Miami University currently studying Computer Science with a minor in Games + Simulation (Game
-                    Development). I am most passionate about the field of AI with an interest in Web Development. I find the seemingly limitless
-                    potential for AI to solve the world's most complicated problems so captivating and am eager to contribute myself. Additionally, I
-                    find the complex problems in themselves fascinating and the work, therefore, really rewarding.
-                </p>
+        <div class="container">
+            <div class="text-center mb-5" style="margin-top: 3%">
+                <h1>CV, Unofficial Transcript</h1>
             </div>
-            <div class="col-md-6">
-                <div class="text-center mb-4">
-                    <button class="btn btn-primary" onclick="changePDF('sondara.pdf')">Sondara</button>
-                    <button class="btn btn-primary" onclick="changePDF('stratostria.pdf')">Stratostria</button>
-                </div>
-                <br />
-                <div class="embed-responsive embed-responsive-16by9">
-                    <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/sondara.pdf"></iframe>
-                </div>
+
+            <div class="text-center mb-4">
+                <button class="btn btn-primary" onclick="changePDF('cv.pdf')">CV</button>
+                <button class="btn btn-primary" onclick="changePDF('transcript.pdf')">Transcript</button>
+           </div>
+            <br />
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/cv.pdf"></iframe>
             </div>
         </div>
-
         <br /><br />
 
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container text-center">
                 <span class="text-muted">© 2024 Keaton Ramey. All rights reserved. </span> <br />
                 <span class="text-muted"
-                    >Email: keaton.ramey@gmail.com | Phone: (646)-316-1340 | <a href="https://www.linkedin.com/in/keaton-ramey">LinkedIn</a> |
-                    <a href="https://github.com/Keaton-A-Ramey">GitHub</a></span
+                >keaton.ramey@gmail.com | (646)-316-1340 | <a href="https://www.linkedin.com/in/keaton-ramey">LinkedIn</a> |
+                <a href="https://github.com/Keaton-A-Ramey">GitHub</a></span
                 >
             </div>
         </footer>
