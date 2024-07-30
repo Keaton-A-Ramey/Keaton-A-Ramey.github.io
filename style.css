@@ -25,14 +25,6 @@ img {
     text-align: center;
 }
 
-/* Section styling for NYC and Miami University */
-.section-gray {
-    background-color: #f8f9fa; /* Light gray background */
-    padding: 20px;
-    border-radius: 8px;
-    margin-bottom: 20px;
-}
-
 /* Remove default link styling and make the whole card clickable */
 .card-link {
     text-decoration: none;
@@ -90,6 +82,10 @@ img {
     margin-bottom: 20px; /* Add margin to create space between blog posts */
 }
 
+.blog-post-placeholder p {
+    font-size: 110%;
+}
+
 .contact-section {
     background-color: #f8f9fa; /* Light gray background */
     padding: 30px;
@@ -122,7 +118,7 @@ Home Page
 */
 
 .welcome-page {
-    background-color: #d1ebff;
+    background-color: #c7d8e8;
     color: #000c19;
 }
 
@@ -142,7 +138,59 @@ Home Page
     color: white;
 }
 
+.headline {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 3.8em;
+    font-weight: bold;
+}
+
+.subheadline {
+    font-size: 1.55em;  /* Slightly larger font for emphasis */
+    font-weight: 300;    /* Light font weight for a clean look */
+    color: #555;         /* A softer color to complement the main headline */
+    margin-top: 1rem;    /* Space between the headline and subheadline */
+    line-height: 1.6;    /* Increased line height for better readability */
+    font-family: 'Arial', sans-serif; /* Choose a clean and modern font */
+}
+
+.typing-effect {
+    border-right: 0.1em solid #000;
+    width: 0; /* Start with 0 width */
+    animation: typing 1.5s steps(30, end) forwards, blink-caret 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: black }
+}
+
+.typing-container {
+    display: inline-block;
+}
+
+.circular-headshot {
+    border-radius: 50%; /* Makes the image circular */
+    width: 55%; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure the image covers the circle */
+}
+
+.transition {
+    background: linear-gradient(to bottom, #c7d8e8, #ffffff);
+}
+
+.welcome-content {
+    background-color: white;
+}
+
 /* Blog post pages */
+
 
 /* Header Container */
 .header-container {
