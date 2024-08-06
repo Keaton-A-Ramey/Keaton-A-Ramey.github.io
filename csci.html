@@ -66,7 +66,7 @@
                 <div class="text-center" style="margin-top: 3%">
                     <h1 class="headline">CS Portfolio</h1>
                     <p class="subheadline" style="margin-left: 25%; margin-right: 25%">
-                        Hi, thanks for checking out my work! Here you'll see I have a pretty wide range of proficiencies, including Python, C/C++, Java,
+                        Hi, thanks for checking out my work! Here you'll see I have a wide range of proficiencies, including Python, C/C++, Java,
                         HTML/CSS/JS, React, and some SQL. These days, the languages I use most are C/C++ and HTML/CSS/JS.
                     </p>
                 </div>
@@ -77,19 +77,36 @@
             <div class="container-fluid mt-4 main-cards">
                 <!-- Project Cards Start -->
                 <div class="row">
-                    <!--RedShout / Project 1-->
+                    <!--Chess Engine-->
                     <div class="col-md-4 mb-4 fade-in-card">
                         <!-- Link to project modal -->
-                        <a href="#" class="card-link" data-toggle="modal" data-target="#project1Modal">
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#chessEngineModal">
                             <div class="card custom-card">
-                                <img src="proj-images/redshout.png" class="card-img-top" alt="Project Image" />
+                                <img src="proj-images/chess-engine.jpg" class="card-img-top" alt="Project Image" />
                                 <div class="card-body">
-                                    <h5 class="card-title">"RedShout"</h5>
+                                    <h5 class="card-title">"Oliver" Chess Engine (WIP)</h5>
                                     <p class="card-text">
-                                        A personal project. I made a cloud-based, forum-style social media page themed for Miami University. Users can
-                                        login with their google accounts, like each other's posts, create posts, and leave comments on others'.
+                                        My current project. I am creating a chess engine from the ground up. As of writing this
+                                        I am currently in the midst of perft testing to iron out minor bugs in move generation.
                                     </p>
-                                    <p class="card-text">Used: React.js, Firebase, TypeScript</p>
+                                    <p class="card-text">Using: C</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--High Roller Heaven / Project 5-->
+                    <div class="col-md-4 mb-4 fade-in-card">
+                        <!--Link to project writeup-->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#project5Modal">
+                            <div class="card custom-card">
+                                <img src="proj-images/highroller.png" class="card-img-top" alt="Project Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">"High Roller Heaven"</h5>
+                                    <p class="card-text">
+                                        Designed and developed a casino-style website with peers including account registration/login, a home page, 4
+                                        casino games, and a user balance system.
+                                    </p>
+                                    <p class="card-text">Used: React.js, Node.js, MongoDB</p>
                                 </div>
                             </div>
                         </a>
@@ -107,6 +124,23 @@
                                         Included shadows, textures, various objects, anti-aliasing, and more.
                                     </p>
                                     <p class="card-text">Used: C++</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Spam Filter-->
+                    <div class="col-md-4 mb-4 fade-in-card">
+                        <!-- Link to project modal -->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#spamFilterModal">
+                            <div class="card custom-card">
+                                <img src="proj-images/spam-filter.png" class="card-img-top" alt="Project Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Spam Filter</h5>
+                                    <p class="card-text">
+                                        Used Python to implement a spam filter using a Naive Bayes approach as outlined 
+                                        in an academic paper written by Jonathan Lee of UW. 
+                                    </p>
+                                    <p class="card-text">Used: Python</p>
                                 </div>
                             </div>
                         </a>
@@ -144,19 +178,19 @@
                             </div>
                         </a>
                     </div>
-                    <!--High Roller Heaven / Project 5-->
+                    <!--RedShout / Project 1-->
                     <div class="col-md-4 mb-4 fade-in-card">
-                        <!--Link to project writeup-->
-                        <a href="#" class="card-link" data-toggle="modal" data-target="#project5Modal">
+                        <!-- Link to project modal -->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#project1Modal">
                             <div class="card custom-card">
-                                <img src="proj-images/highroller.png" class="card-img-top" alt="Project Image" />
+                                <img src="proj-images/redshout.png" class="card-img-top" alt="Project Image" />
                                 <div class="card-body">
-                                    <h5 class="card-title">"High Roller Heaven"</h5>
+                                    <h5 class="card-title">"RedShout"</h5>
                                     <p class="card-text">
-                                        Designed and developed a casino-style website with peers including account registration/login, a home page, 4
-                                        casino games, and a user balance system.
+                                        A personal project. I made a cloud-based, forum-style social media page themed for Miami University. Users can
+                                        login with their google accounts, like each other's posts, create posts, and leave comments on others'.
                                     </p>
-                                    <p class="card-text">Used: React.js, Node.js, MongoDB</p>
+                                    <p class="card-text">Used: React.js, Firebase, TypeScript</p>
                                 </div>
                             </div>
                         </a>
@@ -197,8 +231,38 @@
                 </div>
                 <!-- Project Cards End -->
             </div>
-
             <!-- Modals for each project -->
+            <!-- Modal for Chess Engine -->
+            <div class="modal fade" id="chessEngineModal" tabindex="-1" role="dialog" aria-labelledby="chessEngineModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="project1ModalLabel">"Oliver" Chess Engine (WIP)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="proj-images/chess-engine.jpg" class="img-fluid mb-3" alt="Project Image" />
+                            <p>
+                                I have been working on this since late July/early August. This is something I have always wanted to create
+                                as Chess is a long-time passion/interest of mine. When we learned the fundamentals of how engines work (minimax 
+                                trees, searching algorithms, alpha-beta pruning, etc.) in my AI course, I knew I had to make one. 
+                            </p>
+                            <p>
+                                This engine is named after a friend of mine from high school. Whenever we both had free time we wouldn't say a
+                                word before walking to the library and sitting at the chess board to play for as much time as we had. He beat 
+                                me most of the time like I am sure this engine will too when it's done. 
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
             <!-- Modal for Project 1 / RedShout -->
             <div class="modal fade" id="project1Modal" tabindex="-1" role="dialog" aria-labelledby="project1ModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -249,7 +313,7 @@
                             </button>
                         </div>
                         <div class="modal-body">
-                            <img src="proj-images/opengl.png" class="img-fluid mb-3" alt="Project Image" />
+                            <img src="proj-images/graphics-proj.png" class="img-fluid mb-3" alt="Project Image" />
                             <p>
                                 Here, I implemented a variety of features in an interactive Raytracing program. While this class was very difficult, it
                                 was also incredibly rewarding. Seeing the graphics come together over the course of the semester as I learned how to
@@ -288,7 +352,42 @@
                     </div>
                 </div>
             </div>
-
+            <!-- Modal for Spam Filter -->
+            <div class="modal fade" id="spamFilterModal" tabindex="-1" role="dialog" aria-labelledby="spamFilterModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="project2ModalLabel">Spam Filter</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="proj-images/bayes.jpg" class="img-fluid mb-3" alt="Project Image" />
+                            <p>
+                               Here, I implemented a Naive Bayes Classifier using an approach outlined in a paper written by Jonathan
+                               Lee of University of Washington. You can read the paper <a href="https://courses.cs.washington.edu/courses/cse312/18sp/lectures/naive-bayes/naivebayesnotes.pdf" target="_blank">here</a>
+                            </p>
+                            <p>
+                                To do this, I wrote two different programs. The first program used a dataset from Kaggle to calculate the probabilities
+                                that an email is either spam or not (ham) and go through each word that appears to calculate their individual probabilities
+                                of appearing given an email is spam or ham. I then used the pickle library to save this data to my computer for easy use. The
+                                second program simply grabs all of the data from the file before taking an input string from the user and calculating whether or
+                                not it is likely spam. 
+                            </p>
+                            <p>
+                                While I learned how Naive Bayes works in class, I had a lot of fun implementing the logarithm-based approach 
+                                he outlines on the last page. I am currently working on rewriting this program to put the data in a JSON file instead of a pkl
+                                file so that all of you can play with it yourselves.
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <a href="#" target="_blank" class="btn btn-primary disabled" aria-disabled="true">Coming Soon</a>
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <!-- Modal for Stocks / Project 3 -->
             <div class="modal fade" id="project3Modal" tabindex="-1" role="dialog" aria-labelledby="project3ModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -374,13 +473,15 @@
                         <div class="modal-body">
                             <img src="proj-images/hrh-modal.jpg" class="img-fluid mb-3" alt="Project Image" />
                             <p>
-                                Done with a group of 4 other students, together we worked on this site. The HiLo game was all my work, although I helped
-                                my peers out in implementing a couple of things. After developing several smaller projects and RedShout on my own, this
-                                project solidified my confidence as a React developer and reinforced a lot of the concepts I had been learning on my own
-                                throughout the semester. It was very rewarding as implementing everything I was responsible for felt very easy. That
-                                feeling of mastery and putting something together that works quickly is one of my favorite feelings being a computer
-                                science student. Additionally, this project was my first exposure to a non-relational document database and Node which was
-                                awesome.
+                                Done with a group of 4 other students. The HiLo game was my contribution, although I pitched 
+                                in at other points of the site too. 
+                            </p>
+                            <p>
+                                After developing several smaller projects and RedShout on my own, this project solidified my 
+                                confidence as a React developer and reinforced the concepts I had been learning on my own
+                                throughout the semester. It was very rewarding as implementing everything I was responsible for felt 
+                                very easy. That feeling of mastery and putting something together that works quickly is one of my 
+                                favorite feelings being a computer science student. 
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -457,7 +558,7 @@
                 </div>
             </div>
         </div>
-        
+
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container text-center">
                 <span class="text-muted">© 2024 Keaton Ramey. All rights reserved. </span> <br />
