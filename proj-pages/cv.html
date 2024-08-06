@@ -7,94 +7,94 @@
         <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet" />
         <link href="../style.css" rel="stylesheet" />
         <!--Favicon Package Code-->
-        <link rel="apple-touch-icon" sizes="180x180" href="icons/apple-touch-icon.png" />
-        <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon-32x32.png" />
-        <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon-16x16.png" />
-        <link rel="manifest" href="icons/site.webmanifest" />
-        <link rel="mask-icon" href="icons/safari-pinned-tab.svg" color="#5bbad5" />
+        <link rel="apple-touch-icon" sizes="180x180" href="../icons/apple-touch-icon.png" />
+        <link rel="icon" type="image/png" sizes="32x32" href="../icons/favicon-32x32.png" />
+        <link rel="icon" type="image/png" sizes="16x16" href="../icons/favicon-16x16.png" />
+        <link rel="manifest" href="../icons/site.webmanifest" />
+        <link rel="mask-icon" href="../icons/safari-pinned-tab.svg" color="#5bbad5" />
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
     </head>
+    <!--#TODO: Zooming out a lot makes the PDF viewer very long (extends to bottom)-->
     <body>
-        <div style="background-color: #c7d8e8;">
-            <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <a class="navbar-brand" href="../index.html">Keaton Ramey</a>
-                <button
-                    class="navbar-toggler"
-                    type="button"
-                    data-toggle="collapse"
-                    data-target="#navbarNav"
-                    aria-controls="navbarNav"
-                    aria-expanded="false"
-                    aria-label="Toggle navigation"
-                >
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link" href="../about.html">About Me</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                            <a
-                                class="nav-link dropdown-toggle active"
-                                href="#"
-                                id="work-dropdown"
-                                role="button"
-                                data-toggle="dropdown"
-                                aria-haspopup="true"
-                                aria-expanded="false"
-                            >
-                                My Work
-                            </a>
-                            <div class="dropdown-menu" aria-labelledby="work-dropdown">
-                                <a class="dropdown-item" href="../csci.html">CS Portfolio</a>
-                                <a class="dropdown-item active" href="#">CV</a>
-                            </div>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../world.html">My World</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="../contact.html">Contact Me</a>
-                        </li>
-                    </ul>
+        <div class="content-wrapper">
+            <div style="background-color: #c7d8e8">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <a class="navbar-brand" href="../index.html">Keaton Ramey</a>
+                    <button
+                        class="navbar-toggler"
+                        type="button"
+                        data-toggle="collapse"
+                        data-target="#navbarNav"
+                        aria-controls="navbarNav"
+                        aria-expanded="false"
+                        aria-label="Toggle navigation"
+                    >
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="../about.html">About Me</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a
+                                    class="nav-link dropdown-toggle active"
+                                    href="#"
+                                    id="work-dropdown"
+                                    role="button"
+                                    data-toggle="dropdown"
+                                    aria-haspopup="true"
+                                    aria-expanded="false"
+                                >
+                                    My Work
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="work-dropdown">
+                                    <a class="dropdown-item" href="../csci.html">CS Portfolio</a>
+                                    <a class="dropdown-item active" href="#">CV</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../world.html">My World</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="../contact.html">Contact Me</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
+                <div class="text-center" style="margin-top: 3%">
+                    <p class="headline">CV + Unofficial Transcript</p>
+                    <p class="subheadline" style="margin-left: 25%; margin-right: 25%">
+                        Below you can see both my 1-pager resume and an up-to-date unofficial transcript containing records of my coursework for each
+                        semester, the grades I received, and academic awards I earned (beside "Additional Standing").
+                    </p>
                 </div>
-            </nav>
 
-            <div class="text-center" style="margin-top: 3%;">
-                <p class="headline">CV + Unofficial Transcript</p>
-                <p class="subheadline" style="margin-left: 25%; margin-right: 25%;">
-                    Below you can see both my 1-pager resume and an up-to-date unofficial
-                    transcript containing records of my coursework for each semester, the grades I
-                    received, and academic awards I earned (beside "Additional Standing").
-                </p>
+                <div class="transition"><br /><br /><br /></div>
             </div>
 
-            <div class="transition">
-                <br><br><br>
+            <!-- Main Content -->
+            <div class="container">
+                <div class="text-center mb-4">
+                    <button class="btn btn-primary" onclick="changePDF('cv.pdf')">CV</button>
+                    <button class="btn btn-primary" onclick="changePDF('transcript.pdf')">Transcript</button>
+                </div>
+                <br />
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/cv.pdf"></iframe>
+                </div>
             </div>
+            <br /><br />
         </div>
-
-        <!-- Main Content -->
-        <div class="container">
-            <div class="text-center mb-4">
-                <button class="btn btn-primary" onclick="changePDF('cv.pdf')">CV</button>
-                <button class="btn btn-primary" onclick="changePDF('transcript.pdf')">Transcript</button>
-           </div>
-            <br />
-            <div class="embed-responsive embed-responsive-16by9">
-                <iframe id="pdfViewer" class="embed-responsive-item" src="../pdfs/cv.pdf"></iframe>
-            </div>
-        </div>
-        <br /><br />
 
         <footer class="footer mt-auto py-3 bg-light">
             <div class="container text-center">
                 <span class="text-muted">© 2024 Keaton Ramey. All rights reserved. </span> <br />
                 <span class="text-muted"
-                >keaton.ramey@gmail.com | (646)-316-1340 | <a href="https://www.linkedin.com/in/keaton-ramey">LinkedIn</a> |
-                <a href="https://github.com/Keaton-A-Ramey">GitHub</a></span
+                    >keaton.ramey@gmail.com | (646)-316-1340 | <a href="https://www.linkedin.com/in/keaton-ramey">LinkedIn</a> |
+                    <a href="https://github.com/Keaton-A-Ramey">GitHub</a></span
                 >
             </div>
         </footer>
