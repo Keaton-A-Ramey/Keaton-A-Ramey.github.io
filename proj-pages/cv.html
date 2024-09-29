@@ -15,6 +15,19 @@
         <meta name="msapplication-TileColor" content="#da532c" />
         <meta name="theme-color" content="#ffffff" />
     </head>
+    <style>
+    /*Makes iframe work for mobile*/
+    @media only screen and (max-width: 600px) {
+        .embed-responsive {
+            height: auto;
+            padding-bottom: 150%; /* Adjust this value to your needs */
+        }
+        iframe {
+            width: 100%;
+            height: auto;
+        }
+    }
+    </style>
     <!--#TODO: Zooming out a lot makes the PDF viewer very long (extends to bottom)-->
     <body>
         <div class="content-wrapper">

@@ -188,6 +188,12 @@ Home Page
         blink-caret 0.75s step-end infinite;
 }
 
+@media (max-width: 768px) {
+    .typing-effect {
+      font-size: 1.8em; /* Smaller size on mobile */
+    }
+}
+
 @keyframes typing {
     from {
         width: 0;
