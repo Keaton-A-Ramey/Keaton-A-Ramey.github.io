@@ -1,21 +1,3 @@
-@media (max-width: 768px) {
-    .headline {
-      font-size: 2.4em; /* Smaller size on mobile */
-    }
-    
-    .subheadline {
-        font-size: 1.02em;
-    }
-
-    .embed-responsive-16by9 {
-        padding-bottom: 75%; /* Adjust the aspect ratio for mobile */
-    }
-
-    .embed-responsive-item {
-        height: 100%; /* Full height iframe on mobile */
-    }
-}
-
 html,
 body {
     height: 100%;
@@ -196,6 +178,11 @@ Home Page
     margin-top: 1rem; /* Space between the headline and subheadline */
     line-height: 1.6; /* Increased line height for better readability */
     font-family: 'Arial', sans-serif; /* Choose a clean and modern font */
+}
+
+.subhead-margins {
+    margin-left: 25%; 
+    margin-right: 25%;
 }
 
 .typing-effect {
@@ -452,4 +439,37 @@ Home Page
 #run-button {
     display: block;
     margin: 20px 0;
+}
+
+
+@media (max-width: 768px) {
+    .headline {
+      font-size: 2.4em; /* Smaller size on mobile */
+    }
+    
+    .subheadline {
+        font-size: 1.52em;
+    }
+
+    .embed-responsive-16by9 {
+        padding-bottom: 75%; /* Adjust the aspect ratio for mobile */
+    }
+
+    .embed-responsive-item {
+        height: 100%; /* Full height iframe on mobile */
+    }
+
+    .subhead-margins {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .about-margins {
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .typing-effect {
+        font-size: 3.6em; /* Smaller size on mobile */
+    }
 }
