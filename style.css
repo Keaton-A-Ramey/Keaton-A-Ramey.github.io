@@ -218,9 +218,11 @@ Home Page
 
 .circular-headshot {
     border-radius: 50%; /* Makes the image circular */
-    width: 55%; /* Adjust the size as needed */
-    height: auto; /* Maintain aspect ratio */
     object-fit: cover; /* Ensure the image covers the circle */
+    border: none !important; 
+    box-shadow: none; 
+    width: 50%; 
+    height: auto;
 }
 
 .transition {
@@ -470,10 +472,11 @@ Home Page
     }
 
     .typing-effect {
-        font-size: 2.8em; /* Smaller size on mobile */
+        font-size: 2.65em; /* Smaller size on mobile */
     }
 
     .circular-headshot {
         margin-top: 30px;
+        width: 80%;
     }
 }
