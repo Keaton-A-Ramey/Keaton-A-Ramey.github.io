@@ -219,7 +219,7 @@ Home Page
 .circular-headshot {
     border-radius: 50%; /* Makes the image circular */
     object-fit: cover; /* Ensure the image covers the circle */
-    border: none !important; 
+    border: none; 
     box-shadow: none; 
     width: 50%; 
     height: auto;
@@ -233,7 +233,7 @@ Home Page
     background-color: white;
 }
 
-/* Blog post page */
+/* Blog post pages */
 
 /* Header Container */
 .header-container {
