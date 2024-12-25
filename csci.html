@@ -67,7 +67,7 @@
                     <h1 class="headline">CS Portfolio</h1>
                     <p class="subheadline subhead-margins">
                         Hi, thanks for checking out my work! Here you'll see I have a wide range of proficiencies, including Python, C/C++, Java,
-                        HTML/CSS/JS, React, and some SQL. These days, the languages I use most are C/C++ and HTML/CSS/JS.
+                        HTML/CSS/JS, React, and some SQL. These days, I am most frequently using Python and C. 
                     </p>
                 </div>
 
@@ -77,6 +77,41 @@
             <div class="container-fluid mt-4 main-cards">
                 <!-- Project Cards Start -->
                 <div class="row">
+                    <!--Autonomous Drone Capstone-->
+                    <div class="col-md-4 mb-4 fade-in-card">
+                        <!-- Link to project modal -->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#droneModal">
+                            <div class="card custom-card">
+                                <img src="proj-images/drone.jpg" class="card-img-top" alt="Project Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Autonomous Drone Capstone Project</h5>
+                                    <p class="card-text">
+                                        Designing a system that automatically detects a drone with multiple cameras, 
+                                        estimates it location, and issues commands. So far, I have produced software that, given image data, 
+                                        will accurately estimate its 3D location.
+                                    </p>
+                                    <p class="card-text">Using: Python</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--Machine Learning Project-->
+                    <div class="col-md-4 mb-4 fade-in-card">
+                        <!-- Link to project modal -->
+                        <a href="#" class="card-link" data-toggle="modal" data-target="#machineLearningModal">
+                            <div class="card custom-card">
+                                <img src="proj-images/ML-graph.png" class="card-img-top" alt="Project Image" />
+                                <div class="card-body">
+                                    <h5 class="card-title">Activity Classification Project</h5>
+                                    <p class="card-text">
+                                        Conducted EDA and feature engineering on multi-sensor time-series data with Python (pandas, numpy, scikit-
+                                        learn). Using windowing and overlap configurations, experimented with various models for activity classification
+                                    </p>
+                                    <p class="card-text">Using: Python</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
                     <!--Chess Engine-->
                     <div class="col-md-4 mb-4 fade-in-card">
                         <!-- Link to project modal -->
@@ -233,6 +268,54 @@
                 <!-- Project Cards End -->
             </div>
             <!-- Modals for each project -->
+            <!--Autonomous Drone Capstone Modal-->
+            <div class="modal fade" id="droneModal" tabindex="-1" role="dialog" aria-labelledby="droneModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="project1ModalLabel">"Oliver" Chess Engine (WIP)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="proj-images/drone.jpg" class="img-fluid mb-3" alt="Project Image" />
+                            <p>
+                                <!--TODO: Sophisticated writeup of drone project-->
+                                coming soon
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!--Machine Learning Modal-->
+            <div class="modal fade" id="machineLearningModal" tabindex="-1" role="dialog" aria-labelledby="machineLearningModal" aria-hidden="true">
+                <div class="modal-dialog modal-lg" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="project1ModalLabel">"Oliver" Chess Engine (WIP)</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="proj-images/ML-graph.png" class="img-fluid mb-3" alt="Project Image" />
+                            <p>
+                                <!--TODO: Sophisticated writeup of ML project-->
+                                coming soon
+                            </p>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- Modal for Chess Engine -->
             <div class="modal fade" id="chessEngineModal" tabindex="-1" role="dialog" aria-labelledby="chessEngineModal" aria-hidden="true">
                 <div class="modal-dialog modal-lg" role="document">
@@ -257,6 +340,7 @@
                             </p>
                         </div>
                         <div class="modal-footer">
+                            <!--TODO: Show some kind of product, some kind of tangible-->
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
                     </div>
@@ -424,6 +508,7 @@
                             </p>
                         </div>
                         <div class="modal-footer">
+                            <!--TODO: Implement stock dashboard viewable-->
                             <a href="#" target="_blank" class="btn btn-primary disabled" aria-disabled="true">Not Viewable Yet</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
@@ -495,6 +580,7 @@
                             </p>
                         </div>
                         <div class="modal-footer">
+                            <!--TODO: Implement playable HRH-->
                             <a href="#" target="_blank" class="btn btn-primary disabled" aria-disabled="true">Not Viewable Yet</a>
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                         </div>
