@@ -84,9 +84,9 @@
                             <div class="card custom-card">
                                 <img src="proj-images/drone.jpg" class="card-img-top" alt="Project Image" />
                                 <div class="card-body">
-                                    <h5 class="card-title">Autonomous Drone Capstone Project</h5>
+                                    <h5 class="card-title">Autonomous Drone Capstone Project (WIP)</h5>
                                     <p class="card-text">
-                                        Designing a system that automatically detects a drone with multiple cameras, 
+                                        Currently designing a system that automatically detects a drone with multiple cameras, 
                                         estimates it location, and issues commands. So far, I have produced software that, given image data, 
                                         will accurately estimate its 3D location.
                                     </p>
@@ -104,10 +104,9 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Activity Classification Project</h5>
                                     <p class="card-text">
-                                        Conducted EDA and feature engineering on multi-sensor time-series data with Python (pandas, numpy, scikit-
-                                        learn). Using windowing and overlap configurations, experimented with various models for activity classification
+                                        Conducted EDA and feature engineering on multi-sensor time-series data. Using windowing and overlap configurations, experimented with various models for activity classification
                                     </p>
-                                    <p class="card-text">Using: Python</p>
+                                    <p class="card-text">Using: Python (pandas, numpy, scikit-learn, matplotlib, scipy, glob) </p>
                                 </div>
                             </div>
                         </a>
@@ -121,7 +120,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title">"Oliver" Chess Engine (WIP)</h5>
                                     <p class="card-text">
-                                        My current project. I am creating a chess engine from the ground up. As of writing this I have resolved
+                                        Currently creating a chess engine from the ground up. As of writing this I have resolved
                                         all bugs in move generation according to initial performance tests. Next is implementing search. 
                                     </p>
                                     <p class="card-text">Using: C</p>
@@ -256,8 +255,8 @@
                                 <div class="card-body">
                                     <h5 class="card-title">Various Java Projects</h5>
                                     <p class="card-text">
-                                        Over the last couple of years, Java is the language I have used the most, despite me not having made anything
-                                        with it big enough for its own card. On this page, I'll show off what kinds of things I have done/can do with
+                                        In the first few years at Miami, Java was the language I used the most, despite me not having made anything
+                                        with it big enough for its own card. In this card, I'll discuss what kinds of things I have done/can do with
                                         it.
                                     </p>
                                 </div>
@@ -273,7 +272,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project1ModalLabel">"Oliver" Chess Engine (WIP)</h5>
+                            <h5 class="modal-title" id="project1ModalLabel">Autonomous Drone Capstone Project</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -281,8 +280,38 @@
                         <div class="modal-body">
                             <img src="proj-images/drone.jpg" class="img-fluid mb-3" alt="Project Image" />
                             <p>
-                                <!--TODO: Sophisticated writeup of drone project-->
-                                coming soon
+                                This is a 2-semester project I am doing with 3 Electrical Engineering Students. The 
+                                overall goal is to have a system where a Raspberry Pi is connected to 3 (for now)
+                                cameras that transmit their image data to a central Pi. Using these 3 images, this
+                                central Pi will automatically use software that I have already written (3D localization 
+                                software) to accurately calculate the real-world position of the drone. 
+                            </p>
+                            <p>
+                                Using that real-world position, this central Pi will decide on and issue instructions to the
+                                drone in order to move it along a predetermined path. The end goal is to fit hyperspectral 
+                                cameras to this drone in order to use its images to analyze crop health in an indoor farm.
+                                These insights will be used to decide what nutrients and how much of them to give to areas
+                                of crops. 
+                            </p>
+                            <p>
+                                To be more specific, this semester I have delivered software that does 2 main things:
+                            </p>
+                            <ol>
+                                <li>
+                                    Given the rough, 3-D locations of a camera and both the 3-D locations and pixel-coordinates
+                                    of 5 objects in the image (we used LEDs), the software will run a least-squares optimization
+                                    to very accurately calculate the location and orientation of the camera.
+                                </li>
+                                <li>
+                                    Given the pixel coordinates of an object that appears in multiple images that I am able to
+                                    run that least-squares optimization with, I can accurately calculate the approximate 3D location
+                                    of said object. This is how we'll know where the drones are. 
+                                </li>
+                            </ol>
+                            <p>
+                                Next semester, I will be working on processes by which we can make those 2 things 
+                                an automatic rather than a manual process, as I currently have to feed the program those coordinates. 
+                                Additionally, I will likely be working on interfacing with the drone, writing software to control its movement. 
                             </p>
                         </div>
                         <div class="modal-footer">
@@ -297,7 +326,7 @@
                 <div class="modal-dialog modal-lg" role="document">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title" id="project1ModalLabel">"Oliver" Chess Engine (WIP)</h5>
+                            <h5 class="modal-title" id="project1ModalLabel">Activity Classification Project</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
@@ -305,8 +334,34 @@
                         <div class="modal-body">
                             <img src="proj-images/ML-graph.png" class="img-fluid mb-3" alt="Project Image" />
                             <p>
-                                <!--TODO: Sophisticated writeup of ML project-->
-                                coming soon
+                                This project was done over the course of a semester in CSE 432/532: Machine Learning. 
+                                It focused on classifying human activities using data from four sensors: accelerometer, 
+                                gyroscope, magnetometer, and pressure sensor. The data came from 100+ experiments from a dozen users, and 
+                                the goal was to preprocess it, extract features, and train machine learning models to identify 
+                                activities like walking, running, and typing.
+                            </p>
+                            <p>
+                                I started by organizing the raw sensor data, conducting exploratory data analysis (EDA), and cleaning it up. 
+                                Missing values were handled using interpolation, filling techniques, and dropping any leftover columns with 
+                                too many NaNs. To avoid data leakage, I split the data into training and testing groups based on users. I also 
+                                standardized all features and used SMOTE to address class imbalances.
+                            </p>
+                            <p>
+                                Feature extraction was a big part of this project. I split the time-series data into overlapping windows, with 
+                                sizes from 100 to 500 samples and overlaps of 25% or 50%. From each window, I extracted 114 features, including 
+                                things like mean, variance, skewness, and kurtosis. These features were consistent across both training and testing 
+                                datasets. Feature selection was performed to identify the most relevant features, using mutual information and 
+                                correlation analysis to reduce redundancy and improve model performance.
+                            </p>
+                            <p>
+                                I used the selected features to train models like Logistic Regression, SVM, Random Forest, KNN, and XGBoost. 
+                                I tuned their hyperparameters with GridSearchCV or RandomizedSearchCV and evaluated them using metrics like 
+                                F1 Score, Cohen's Kappa, and Precision. SVM and Random Forest performed the best in my testing.
+                            </p>
+                            <p>
+                                This project had its challenges—things like computational limits and handling redundant features—but it taught 
+                                me a lot about working with time-series data and machine learning workflows. Overall, it was a excellent learning 
+                                experience and I am excited to use what I learned here in future projects.
                             </p>
                         </div>
                         <div class="modal-footer">
